@@ -1,0 +1,180 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSS - Telkom Schools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon"
+        href="https://smktelkom-pwt.sch.id/wp-content/uploads/2019/02/logo-telkom-schools-bundar-1024x1024.png"
+        type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    body: ["Poppins"],
+                },
+                extend: {},
+            },
+        };
+    </script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                height: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-poppins">
+    <nav class="bg-white text-black font-normal py-3 shadow-lg px-6 sticky top-0">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-4 ">
+                <img src="https://smktelkom-pwt.sch.id/wp-content/uploads/2018/10/logo-telkom-schools.png" alt="Logo"
+                    class="logo md:h-10 h-10" />
+                <img src="https://kss-uks.mardawa.id/wp-content/uploads/2023/05/Logo-Sekolah-Sehat-3-e1684443819880.webp"
+                    alt="Logo" class="logo md:h-10 h-10" />
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul id="navbar" class="hidden md:flex space-x-6 mr-6">
+                <li><a href="index.html" class="nav-link hover:text-[#B6252A] transition duration-300">Beranda</a></li>
+                <li><a href="index.html#5s" class="nav-link hover:text-[#B6252A] transition duration-300">Gerakan 5S</a>
+                </li>
+                <li><a href="index.html#tentang-kami"
+                        class="nav-link hover:text-[#B6252A] transition duration-300">Tentang
+                        Kami</a></li>
+                <li><a href="index.html#artikel"
+                        class="nav-link hover:text-[#B6252A] transition duration-300">Artikel</a></li>
+                </li>
+            </ul>
+
+            <div class="md:hidden flex items-center mr-4">
+                <button id="menu-btn" class="text-black bg-white p-2 rounded-md focus:outline-none">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 5h16a1 1 0 010 2H4a1 1 0 010-2zm0 5h16a1 1 0 010 2H4a1 1 0 010-2z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-[#B6252A] text-white transform -translate-x-full transition-transform duration-300 md:hidden">
+            <div class="flex flex-col p-4 space-y-4 ">
+                <button id="close-btn" class="absolute top-4 right-4 text-white text-3xl font-bold p-2 rounded-md">
+                    &times;
+                </button>
+
+                <!-- Logo Area -->
+                <div class="flex justify-center space-x-4 mt-2 mb-4">
+                    <img src="https://smktelkom-pwt.sch.id/wp-content/uploads/2018/10/logo-telkom-schools.png"
+                        alt="Logo Telkom" class="h-12 w-auto" />
+                    <img src="https://kss-uks.mardawa.id/wp-content/uploads/2023/05/Logo-Sekolah-Sehat-3-e1684443819880.webp"
+                        alt="Logo Sekolah Sehat" class="h-12 w-auto" />
+                </div>
+
+                <!-- Menu Items -->
+                <a href="#home" class="menu-item text-xl hover:text-[#B6252A] transition duration-300">Beranda</a>
+                <a href="#5s" class="menu-item text-xl hover:text-[#B6252A] transition duration-300">Gerakan 5S</a>
+                <a href="#tentang-kami" class="menu-item text-xl hover:text-[#B6252A] transition duration-300">Tentang
+                    Kami</a>
+                <a href="#artikel" class="menu-item text-xl hover:text-[#B6252A] transition duration-300">Artikel</a>
+            </div>
+        </div>
+    </nav>
+    <!-- component -->
+    <div class="max-w-screen-lg mx-auto">
+        <main class="mt-10">
+            <div class="mb-4 md:mb-0 w-full mx-auto ">
+                <div class="px-4 lg:px-0">
+                    <h2 class="text-4xl font-semibold text-gray-800 leading-tight">
+                        Tips Sehat Bergizi di Telkom Schools
+                    </h2>
+                    <a href="#" class="py-2 text-green-700 inline-flex items-center justify-center mb-2">
+                        Gerakan Sekolah Sehat
+                    </a>
+                </div>
+
+                <img src="https://www.smktelkom-bjb.sch.id/web/assets/img/berita/11112022081135WhatsApp%20Image%202022-11-11%20at%2015.12.49.jpeg"
+                    class="w-full object-cover lg:rounded" style="height: 28em;" />
+            </div>
+
+            <div class="flex flex-col lg:flex-row lg:space-x-12">
+
+                <div class="px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
+                    <p class="pb-6"><strong>Gerakan Sekolah Sehat</strong> di Telkom Schools juga menekankan pentingnya
+                        asupan gizi yang seimbang bagi siswa. Dengan pola makan yang sehat dan bergizi, siswa dapat
+                        menjaga daya tahan tubuh, meningkatkan konsentrasi, serta mendukung perkembangan fisik dan
+                        mental yang optimal.</p>
+
+                    <h3 class="text-2xl text-gray-800 font-semibold mb-4 mt-4">1. Penerapan Pola Makan Seimbang</h3>
+                    <p class="pb-6">Di Telkom Schools, kami mendorong siswa untuk mengonsumsi makanan dengan pola makan
+                        yang seimbang. Setiap harinya, siswa disarankan untuk makan makanan yang mengandung karbohidrat,
+                        protein, lemak sehat, vitamin, dan mineral. Dengan memilih makanan yang bergizi, siswa dapat
+                        meningkatkan energi untuk belajar dan beraktivitas sepanjang hari.</p>
+
+                    <h3 class="text-2xl text-gray-800 font-semibold mb-4 mt-4">2. Edukasi Tentang Gizi dengan Aplikasi
+                        Nutrisi</h3>
+                    <p class="pb-6">Kami menyediakan program edukasi tentang gizi melalui aplikasi nutrisi yang dapat
+                        diakses oleh siswa dan orang tua. Aplikasi ini memberikan informasi tentang nilai gizi berbagai
+                        jenis makanan dan merekomendasikan menu harian yang sesuai dengan kebutuhan siswa. Dengan
+                        pemahaman yang lebih baik tentang gizi, siswa dapat membuat pilihan makanan yang lebih sehat.
+                    </p>
+
+                    <h3 class="text-2xl text-gray-800 font-semibold mb-4 mt-4">3. Kebiasaan Mengonsumsi Buah dan Sayur
+                    </h3>
+                    <p class="pb-6">Siswa di Telkom Schools diajarkan untuk rutin mengonsumsi buah dan sayur sebagai
+                        bagian dari pola makan harian mereka. Buah dan sayur kaya akan serat, vitamin, dan mineral yang
+                        penting untuk menjaga kesehatan tubuh. Melalui program *Fruit and Veggie Day*, siswa didorong
+                        untuk membawa buah atau sayuran ke sekolah setiap hari sebagai camilan sehat.</p>
+
+                    <blockquote class="border-l-4 border-gray-500 italic my-8 pl-8 md:pl-12">“Dengan pola makan sehat
+                        dan bergizi, kita bisa mencapai potensi terbaik dalam belajar dan beraktivitas.”</blockquote>
+                </div>
+
+                <div class="w-full lg:w-1/4 m-auto mt-12 max-w-screen-sm">
+                    <div class="p-4 border-t border-b md:border md:rounded">
+                        <div class="flex py-2">
+                            <img src="https://smktelkom-pwt.sch.id/wp-content/uploads/2019/02/logo-telkom-schools-bundar-1024x1024.png"
+                                class="w-10 h-10 rounded-full mr-2 object-cover" alt="Logo Telkom Schools" />
+                            <div>
+                                <p class="font-semibold text-gray-700 text-sm">GSS Telkom Schools</p>
+                                <p class="font-semibold text-gray-600 text-xs">20/08/2024</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 py-3">Dengan menekankan pentingnya gizi seimbang, Telkom Schools
+                            berkomitmen untuk mendukung perkembangan fisik dan mental siswa, serta menciptakan
+                            lingkungan belajar yang lebih sehat.</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
